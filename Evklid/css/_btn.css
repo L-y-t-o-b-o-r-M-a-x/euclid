@@ -1,0 +1,114 @@
+.btn {
+  display: inline-block;
+  padding: 18px 38px;
+  border: none;
+  font-family: var(--montserrat), sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: var(--bold);
+  text-align: center;
+  color: var(--white);
+  background-color: var(--orange);
+  transition: background-color var(--short);
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+  background-color: var(--orange-transp);
+}
+
+.btn:active {
+  background-color: var(--orange-dark);
+}
+
+.btn_big {
+  padding: 24px 35px;
+  max-width: 400px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.btn_border-accent {
+  padding: 16px 36px;
+  border: 3px solid var(--orange);
+  color: var(--white);
+  background-color: transparent;
+  transition: background-color var(--short), border-color var(--short), color var(--short);
+}
+
+.btn_border-accent:focus {
+  background-color: var(--orange);
+}
+
+.btn_border-accent:active {
+  border-color: var(--orange-dark);
+  background-color: var(--orange-dark);
+}
+
+.btn_border {
+  color: var(--dark);
+  font-weight: var(--regular);
+  background-color: transparent;
+  border: 1px solid var(--dark);
+  transition-property: color, background-color, border-color;
+  transition-duration: var(--short);
+}
+
+.btn_border:focus {
+  border-color: var(--dark-gray);
+  color: var(--white);
+  background-color: var(--dark-gray);
+}
+
+.btn_border:active {
+  border-color: var(--black);
+  color: var(--white);
+  background-color: var(--black);
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 13px 27px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .btn_border-accent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 2px;
+    color: var(--orange);
+  }
+
+  .btn_border-accent:focus {
+    color: var(--white);
+  }
+
+  .btn_border-accent:active {
+    color: var(--white);
+  }
+
+}
+
+@media (any-hover: hover) {
+
+  .btn:hover {
+    background-color: var(--orange-transp);
+  }
+
+  .btn_border-accent:hover {
+    background-color: var(--orange);
+  }
+
+  .btn_border:hover {
+    border-color: var(--dark-gray);
+    color: var(--white);
+    background-color: var(--dark-gray);
+  }
+
+  .btn_border-accent:hover {
+    color: var(--white);
+  }
+
+}
